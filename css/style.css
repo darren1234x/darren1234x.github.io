@@ -331,6 +331,7 @@ section .title{
 @media (max-width: 690px) {
   .home{
     height: 100%;
+    width: 100%;
   }
 }
 .home .max-width{
@@ -444,6 +445,11 @@ section .title{
 .about .about-content{
     display: flex;
     flex-wrap: wrap;
+}
+@media (max-width: 690px) {
+  .about{
+    width: 100%;
+  }
 }
 .ustp{
     text-decoration: none;
@@ -572,6 +578,11 @@ section .title{
 .skills{
   background: url(/css/oum.gif);
   background-attachment: fixed;
+}
+@media (max-width: 690px) {
+  .skills{
+    width: 100%;
+  }
 }
 .skills-container {
   box-shadow: 0 0 20px rgba(204, 72, 72, 0.1);
@@ -746,6 +757,7 @@ section .title{
 @media (max-width: 947px){
     .contact{
         height: 1400px;
+        width: 100%;
         }
 }
 .contact .contact-content .text{

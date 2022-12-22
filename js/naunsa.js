@@ -1,6 +1,6 @@
 
 var typed = new Typed(".styling", {
-    strings: [ "STUDENT.", "BEGINNER.", ""],
+    strings: [ "STUDENT.", "BEGINNER."],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
