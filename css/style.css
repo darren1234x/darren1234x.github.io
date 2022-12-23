@@ -157,7 +157,7 @@ nav{
     }
     .wrapper .nav-links{
       position: fixed;
-      height: 100vh;
+      height: 100%;
       width: 100%;
       max-width: 350px;
       top: 0;
@@ -322,14 +322,14 @@ section .title{
 .home{
     display: flex;
     background: url("plnet.gif") no-repeat center;
-    height: 700px;
+    min-height: 100vh;
     width: 100%;
     color: #ffffff;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
 }
-@media (max-width: 690px) {
+@media (max-width: 991px) {
   .home{
     height: 100%;
     width: 80vh;
@@ -450,7 +450,7 @@ section .title{
     display: flex;
     flex-wrap: wrap;
 }
-@media (max-width: 690px) {
+@media (max-width: 991px) {
   .about{
     width: 80vh;
   }
@@ -585,7 +585,7 @@ section .title{
   height: 745px;
   width: 100%;
 }
-@media (max-width: 690px) {
+@media (max-width: 991px) {
   .skills{
     height: 100%;
     width: 80vh;
@@ -738,7 +738,7 @@ section .title{
   height: 400px;
   width: 100%;
 }
-@media (max-width: 947px){
+@media (max-width: 991px){
   .projects{
       height: 500px;
       width: 80vh;
@@ -771,7 +771,7 @@ section .title{
     height: 900px;
     width: 100%;
 }
-@media (max-width: 947px){
+@media (max-width: 991px){
     .contact{
         height: 1400px;
         width: 80vh;
@@ -1047,11 +1047,11 @@ footer{
     padding: 15px 23px;
     color: #fff;
     text-align: center;
-    width: 100%;
+    width: 103%;
 }
-@media (max-width: 947px){
+@media (max-width: 991px){
   .footer{
-      width: 100vh;
+      width: 100%;
       }
 }
 footer span a{
