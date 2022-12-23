@@ -16,6 +16,16 @@ skillItems.forEach(item => {
   item.addEventListener('click', function() {
     this.classList.toggle('active');
   });
+
+  item.addEventListener('mouseenter', function() {
+    this.classList.add('active');
+  });
+
+  item.addEventListener('mouseleave', function() {
+    this.classList.remove('active');
+  });
 });
+
+
 
 
