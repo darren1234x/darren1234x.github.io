@@ -331,7 +331,7 @@ section .title{
 @media (max-width: 690px) {
   .home{
     height: 100%;
-    width: 100%;
+    width: 80vh;
   }
 }
 .home .max-width{
@@ -448,7 +448,7 @@ section .title{
 }
 @media (max-width: 690px) {
   .about{
-    width: 100%;
+    width: 80vh;
   }
 }
 .ustp{
@@ -583,7 +583,7 @@ section .title{
 @media (max-width: 690px) {
   .skills{
     height: 100%;
-    width: 100%;
+    width: 80vh;
   }
 }
 .skills-container {
@@ -734,8 +734,8 @@ section .title{
 }
 @media (max-width: 947px){
   .projects{
-      height: 1000px;
-      width: 100%;
+      height: 500px;
+      width: 80vh;
       }
 }
 
@@ -767,7 +767,7 @@ section .title{
 @media (max-width: 947px){
     .contact{
         height: 1400px;
-        width: 100%;
+        width: 80vh;
         }
 }
 .contact .contact-content .text{
@@ -1040,7 +1040,7 @@ footer{
     padding: 15px 23px;
     color: #fff;
     text-align: center;
-    width: 100%;
+    width: 80vh;
 }
 @media (max-width: 947px){
   .footer{
