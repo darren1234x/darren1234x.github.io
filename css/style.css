@@ -941,7 +941,6 @@ section .title{
   z-index: 1;
   background: #fff;
   color: #fff;
-  padding: 10px 18px;
   font-size: 20px;
   font-weight: 500;
   border-radius: 25px;
@@ -1044,10 +1043,9 @@ section .title{
 /* footer section styling */
 footer{
     background: #111;
-    padding: 15px 23px;
     color: #fff;
     text-align: center;
-    width: 103%;
+    width: 100%;
 }
 @media (max-width: 991px){
   .footer{
