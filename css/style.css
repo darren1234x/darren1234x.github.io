@@ -323,6 +323,7 @@ section .title{
     display: flex;
     background: url("plnet.gif") no-repeat center;
     height: 700px;
+    width: 100%;
     color: #ffffff;
     background-size: cover;
     background-attachment: fixed;
@@ -442,6 +443,9 @@ section .title{
   }
 
 /* about section styling */
+.about{
+  width: 100%;
+}
 .about .about-content{
     display: flex;
     flex-wrap: wrap;
@@ -579,6 +583,7 @@ section .title{
   background: url(/css/oum.gif);
   background-attachment: fixed;
   height: 745px;
+  width: 100%;
 }
 @media (max-width: 690px) {
   .skills{
@@ -731,6 +736,7 @@ section .title{
   color:rgb(0, 0, 0);
   background: #00f8d7;
   height: 400px;
+  width: 100%;
 }
 @media (max-width: 947px){
   .projects{
@@ -763,6 +769,7 @@ section .title{
     background-attachment: fixed;
     background-position: center;
     height: 900px;
+    width: 100%;
 }
 @media (max-width: 947px){
     .contact{
