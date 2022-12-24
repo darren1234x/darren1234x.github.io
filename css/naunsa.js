@@ -9,3 +9,13 @@ var typed = new Typed(".styling", {
     backSpeed: 60,
     loop: true
 });
+window.addEventListener('scroll', function() {
+    var footer = document.querySelector('footer');
+    var footerPosition = footer.getBoundingClientRect().top;
+    var windowHeight = window.innerHeight;
+  
+    if (footerPosition < windowHeight) {
+      footer.classList.add('show');
+    }
+  });
+  
