@@ -174,7 +174,7 @@ nav{
       max-width: 350px;
       top: 0;
       left: -100%;
-      background: #000000;
+      background: url(/css/saski.jpg);
       display: block;
       padding: 50px 10px;
       line-height: 50px;
@@ -1011,6 +1011,12 @@ footer {
   .show {
     animation: fadeIn 1s;
   }
+  .footer-container .fa-brands.fa-facebook-f:hover {
+    color: #3B5999;
+  }
+  .footer-container .fa-brands.fa-brands.fa-facebook-messenger:hover{
+    color: rgb(0, 119, 255);
+  }
   
   @keyframes fadeIn {
     from {
@@ -1134,7 +1140,10 @@ footer {
         font-size: 20px;
     }
     .about .about-content .right .text{
-        font-size: 19px;
+        font-size: 14px;
+    }
+    .about .ustp{
+        font-size: 14px;
     }
     .contact .right form .fields{
         flex-direction: column;
