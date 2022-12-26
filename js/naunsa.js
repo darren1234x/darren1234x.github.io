@@ -10,6 +10,7 @@ var typed = new Typed(".styling", {
     backSpeed: 60,
     loop: true
 });
+/*Skills*/
 const skillItems = document.querySelectorAll('.skill-item');
 
 skillItems.forEach(item => {
