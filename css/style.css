@@ -293,7 +293,6 @@ nav{
     display: none;
   }
 
-
 /* Home */
 .home{
     display: flex;
@@ -489,6 +488,9 @@ nav{
     }
 
 /* skills section styling */
+
+
+
 .skills h2 {
     font-size: clamp(1.5625rem, 1.2755rem + 1.2245vw, 2.5rem);
     margin-bottom: 150px;
@@ -496,8 +498,11 @@ nav{
     color: white;
   }
   .skills{
-    background: url(/css/oum.gif);
-    background-attachment: fixed;
+    background: url(/css/po.gif) no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
     height: 745px;
     width: 100%;
   }
@@ -838,6 +843,7 @@ nav{
   color: #ffffff;
   background: rgb(0, 0, 0);
 }
+/*Social media Icons*/
 .wrapper{
   display: inline-flex;
   height: 100%;
@@ -884,7 +890,6 @@ nav{
   border-radius: 25px;
   opacity: 0;
   pointer-events: none;
-  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .wrapper .icon:hover .tooltip{
@@ -910,46 +915,104 @@ nav{
 .wrapper .icon:hover .tooltip{
   text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
 }
-.wrapper .facebook:hover span,
-.wrapper .facebook:hover .tooltip,
-.wrapper .facebook:hover .tooltip:before{
-  background: #3B5999;
+/*facebook*/
+.wrapper .facebook span{
+  background: linear-gradient(#4568b3, #071b46 );
   color: white;
 }
-.wrapper .twitter:hover span,
+.wrapper .facebook:hover span{
+  background: linear-gradient(rgb(112, 68, 214),#3167da);
+  color: white;
+}
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip:before{
+  background:rgb(84, 28, 216)
+}
+/*twitter*/
+.wrapper .twitter span{
+    background: linear-gradient(#46C1F6,#095170);
+    color: white;
+  }
+  .wrapper .twitter:hover span{
+    background: linear-gradient(#01aef8, rgb(133, 203, 226));
+    color: white;
+  }
 .wrapper .twitter:hover .tooltip,
 .wrapper .twitter:hover .tooltip:before{
-  background: #46C1F6;
+  background: #01aef8;
 }
-.wrapper .instagram:hover span,
+/*instagram*/
+.wrapper .instagram span{
+    background: linear-gradient(#fa1864, #9c4e0e);
+    color: white;
+  }
+.wrapper .instagram:hover span{
+    background: linear-gradient(#fc0071, #8d24ca);
+  }
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip:before{
   background: #e1306c;
 }
-.wrapper .github:hover span,
+/*github*/
+.wrapper .github span{
+  background: linear-gradient(rgb(255, 255, 255), rgb(180, 175, 175));
+  color:rgb(0, 0, 0)
+}
+.wrapper .github:hover span{
+  background:linear-gradient(rgb(16, 1, 26),rgb(16, 1, 26) );
+}
 .wrapper .github:hover .tooltip,
 .wrapper .github:hover .tooltip:before{
-  background: #333;
+  background: rgb(16, 1, 26);
 }
-.wrapper .youtube:hover span,
+/*youtube*/
+.wrapper .youtube span{
+  background: linear-gradient(#ff1100, rgb(146, 1, 1));
+  color:rgb(231, 218, 218)
+}
+.wrapper .youtube:hover span{
+  background: linear-gradient(#cf1d11, rgb(248, 37, 0));
+}
 .wrapper .youtube:hover .tooltip,
 .wrapper .youtube:hover .tooltip:before{
-  background: #DE463B;
+  background: #ec190a;
 }
-.wrapper .tiktok:hover span,
+/*tiktok*/
+.wrapper .tiktok span{
+  background: linear-gradient(to right,#201f1f, rgb(17, 13, 13));
+  color: white;
+}
+.wrapper .tiktok:hover span{
+  background: linear-gradient(to left,#130f0f, rgb(2, 2, 2));
+}
 .wrapper .tiktok:hover .tooltip,
 .wrapper .tiktok:hover .tooltip:before{
-  background: rgb(0, 0, 0);
+  background: #130f0f;
 }
-.wrapper .discord:hover span,
+/*discord*/
+.wrapper .discord span{
+  background: linear-gradient(rgb(119, 0, 255), rgb(40, 1, 85));
+  color: white;
+}
+.wrapper .discord:hover span{
+  background: linear-gradient(rgb(48, 6, 201), rgb(101, 31, 231));
+}
 .wrapper .discord:hover .tooltip,
 .wrapper .discord:hover .tooltip:before{
   background: rgb(119, 0, 255);
 }
-.wrapper .spotify:hover span,
+/*spotify*/
+.wrapper .spotify span{
+  background: linear-gradient(#02fa59, #05701c);
+  color: white;
+}
+.wrapper .spotify:hover span{
+  background: linear-gradient(#02fa59, rgb(57, 235, 119));
+  color: black;
+}
 .wrapper .spotify:hover .tooltip,
 .wrapper .spotify:hover .tooltip:before{
-  background:#1db954;
+  background:#02fa59;
 }
 .media{
   margin-top: 30px;
@@ -1015,7 +1078,9 @@ footer {
     color: #3B5999;
   }
   .footer-container .fa-brands.fa-brands.fa-facebook-messenger:hover{
-    color: rgb(0, 119, 255);
+    background: linear-gradient(rgb(238, 44, 189), rgb(14, 142, 228));
+    -webkit-background-clip: text;
+    color: transparent;
   }
   
   @keyframes fadeIn {
