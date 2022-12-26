@@ -174,7 +174,8 @@ nav{
       max-width: 350px;
       top: 0;
       left: -100%;
-      background: url(/css/saski.jpg);
+      background-image: url(/css/saski.jpg);
+      background-size: cover;
       display: block;
       padding: 50px 10px;
       line-height: 50px;
