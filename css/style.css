@@ -298,7 +298,7 @@ nav{
 .home{
     display: flex;
     background: url("plnet.gif") no-repeat center;
-    height: 100vh;
+    height: 700px;
     color: #ffffff;
     min-height: 500px;
     background-size: cover;
@@ -394,7 +394,7 @@ nav{
     text-align: center;
     font-weight: 900;
     margin-left: 20px;
-    font-size: clamp(1.875rem, 1.6837rem + 0.8163vw, 2.5rem);
+    font-size: clamp(2.1875rem, 1.7092rem + 2.0408vw, 3.75rem);
   }
 
 /* about section styling */
@@ -498,7 +498,7 @@ nav{
 }
 .progress-bar{
   background: #959595;
-  width: 100%;
+  width: 105%;
   height: 10px;
   border-radius: 5px;
 }
@@ -522,32 +522,32 @@ nav{
   justify-content: center;
 }
 .progress-bar .html{
-  background: #e91e63;
+  background-image:linear-gradient(#e34c26, rgb(255, 166, 0),rgb(255, 153, 0));
   animation: html 5s linear forwards;
   animation-iteration-count: infinite;
 }
 .progress-bar .css{
-  background: #cddc39;
+  background-image: linear-gradient(#264de4,rgb(155, 155, 240), #0033ac);
   animation: css 5s linear forwards;
   animation-iteration-count: infinite;
 }
 .progress-bar .js{
-  background: #00bcd4;
+  background-image: linear-gradient(#fbff00,#e7f071, #eeff00);
   animation: js 5s linear forwards;
   animation-iteration-count: infinite;
 }
 .progress-bar .computer{
-  background: #15fd00;
+  background-image: linear-gradient(#32d600,#00fa92, #32d400);
   animation: computer 5s linear forwards;
   animation-iteration-count: infinite;
 }
 .progress-bar .edit{
-  background: #9c27b0;
+  background-image: linear-gradient(#7f00e7,#b025c9, #55009b);
   animation: edit 5s linear forwards;
   animation-iteration-count: infinite;
 }
 .progress-bar .chess{
-  background: red;
+  background-image: linear-gradient(rgb(182, 0, 0),#ff3300,rgb(184, 0, 0));
   animation: chess 5s linear forwards;
   animation-iteration-count: infinite;
 }
@@ -611,7 +611,7 @@ nav{
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center;
-    height: 1100px;
+    height: 1200px;
     width: 100%;
   }
   @media (max-width: 991px) {
@@ -621,7 +621,7 @@ nav{
     }
     .progress-bar{
       background: #959595;
-      width: 320px;
+      width: 100%;
     }
   }
   .skills-container {
@@ -703,50 +703,50 @@ nav{
   }
   
   .skill-item.html {
-    background-color: #9800fd;
+    background-image:linear-gradient(#e34c26, rgb(255, 217, 0),rgb(255, 153, 0));
   }
   .skill-item.html:hover {
-    background-color: #000000;
+    background-image:linear-gradient(black,black,black);
     color: white;
     transform: scale(1.2);
   }
   .skill-item.css {
-    background-color: #f50404;
+    background-image: linear-gradient(#264de4,rgb(155, 155, 240), #0033ac);
   }
   .skill-item.css:hover {
-    background-color: #000000;
+    background-image:linear-gradient(black,black,black);
     color: white;
     transform: scale(1.2);
   }
   .skill-item.js {
-    background-color: #0024c4;
+    background-image: linear-gradient(#fbff00,#f5f790, #eeff00);
   }
   .skill-item.js:hover {
-    background-color: #000000;
+    background-image:linear-gradient(black,black,black);
     color: white;
     transform: scale(1.2);
   }
   .skill-item.pc {
-    background-color: #e5ff00;
+    background-image: linear-gradient(#32d600,#00fa92, #32d400);
   }
   .skill-item.pc:hover {
-    background-color: #000000;
+    background-image:linear-gradient(black,black,black);
     color: white;
     transform: scale(1.2);
   }
   .skill-item.edit {
-    background-color: #00ff0d;
+    background-image: linear-gradient(#7f00e7,#b025c9, #55009b);
   }
   .skill-item.edit:hover {
-    background-color: #000000;
+    background-image:linear-gradient(black,black,black);
     color: white;
     transform: scale(1.2);
   }
   .skill-item.chess {
-    background-color: #dbccc2;
+    background-image: linear-gradient(rgb(182, 0, 0),#ff3300,rgb(184, 0, 0));
   }
   .skill-item.chess:hover {
-    background-color: #000000;
+    background-image:linear-gradient(black,black,black);
     color: white;
     transform: scale(1.2);
   }
@@ -939,23 +939,24 @@ nav{
   align-items: center;
 }
 .right form .button-area button{
-  color: #fff;
+  color: rgb(0, 0, 0);
   display: block;
   width: 160px!important;
   height: 45px;
   outline: none;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   border-radius: 6px;
   cursor: pointer;
   flex-wrap: nowrap;
-  background: none;
-  border: 2px solid #ffffff;
+  background-image: linear-gradient(rgb(138, 13, 221), violet, rgb(174, 2, 241));
+  border: 3px solid #ffffff;
   transition: all 0.3s ease;
 }
 .right form .button-area button:hover{
-  color: #ffffff;
-  background: rgb(0, 0, 0);
+  color: #000000;
+  font-weight: 700;
+  background-image: linear-gradient(red, yellow, orange);
 }
 /*Social media Icons*/
 .wrapper{
@@ -1057,11 +1058,11 @@ nav{
 }
 /*instagram*/
 .wrapper .instagram span{
-    background: linear-gradient(#fa1864, #9c4e0e);
+    background-image: linear-gradient( #8d24ca,#fa1864, #b6570a);
     color: white;
   }
 .wrapper .instagram:hover span{
-    background: linear-gradient(#fc0071, #8d24ca);
+    background-image: linear-gradient( #f58529, #fc0071, #8d24ca);
   }
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip:before{
@@ -1069,12 +1070,12 @@ nav{
 }
 /*github*/
 .wrapper .github:hover span{
-  background: linear-gradient(rgb(255, 255, 255), rgb(180, 175, 175));
+  background: linear-gradient(rgb(255, 255, 255),rgb(214, 210, 210), rgb(180, 175, 175));
   color: black;
 }
 .wrapper .github span{
-  background:linear-gradient(rgb(45, 1, 75),rgb(16, 2, 26) );
-  color: white;
+  background-image: linear-gradient( rgb(180, 175, 175),rgb(255, 255, 255),gray);
+  color: rgb(0, 0, 0);
 }
 .wrapper .github:hover .tooltip,
 .wrapper .github:hover .tooltip:before{
@@ -1095,11 +1096,11 @@ nav{
 }
 /*tiktok*/
 .wrapper .tiktok span{
-  background: linear-gradient(to right,#201f1f, rgb(17, 13, 13));
+  background-image: linear-gradient(#646060, rgb(0, 0, 0),rgb(34, 33, 33));
   color: white;
 }
 .wrapper .tiktok:hover span{
-  background: linear-gradient(to left,#130f0f, rgb(2, 2, 2));
+  background-image: linear-gradient(to left,#141313, rgb(0, 0, 0),rgb(19, 18, 18));
 }
 .wrapper .tiktok:hover .tooltip,
 .wrapper .tiktok:hover .tooltip:before{
@@ -1119,12 +1120,12 @@ nav{
 }
 /*spotify*/
 .wrapper .spotify span{
-  background: linear-gradient(#02fa59, #05701c);
-  color: white;
+  background-image: linear-gradient(#00bd1f, rgb(0, 255, 0),#00861d);
+  color: black;
 }
 .wrapper .spotify:hover span{
-  background: linear-gradient(#02fa59, rgb(57, 235, 119));
-  color: black;
+  background-image: linear-gradient(#00ce1b,rgb(11, 248, 11), rgb(2, 201, 71));
+  color: rgb(255, 255, 255);
 }
 .wrapper .spotify:hover .tooltip,
 .wrapper .spotify:hover .tooltip:before{
@@ -1321,10 +1322,10 @@ footer {
         font-size: 20px;
     }
     .about .about-content .right .text{
-        font-size: 14px;
+        font-size: 18px;
     }
     .about .ustp{
-        font-size: 14px;
+        font-size: 20px;
     }
     .contact .right form .fields{
         flex-direction: column;
