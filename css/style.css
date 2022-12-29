@@ -322,12 +322,15 @@ nav{
     font-size: 27px;
 }
 .home .home-content .text-2{
-    font-size: 70px;
+    font-size: 40px;
     font-weight: 600;
     margin-left: -3px;
 }
 .home .home-content .text-2 span{
-    color: #7b00ff;
+    background: linear-gradient(#6a00db,rgb(255, 254, 255),rgb(99, 0, 192));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px ;
     font-weight: 900;
 }
 .home .home-content a{
@@ -353,12 +356,11 @@ nav{
   }
   @keyframes glow{
     0%, 90%{
-      color: linear-gradient(black,rgb(230, 215, 215));
-      text-shadow: 5px 3px rgb(94, 23, 134), 1px 1px rgb(116, 0, 0), 1px 1px 1px rgb(92, 0, 95);
+      color: linear-gradient(rgb(252, 243, 243),rgb(252, 245, 245));
+      text-shadow: 5px 3px rgb(94, 23, 134);
     }
-    10%, 90%{
-      color: rgba(211, 15, 15, 0);
-      text-shadow: none;
+    5%, 70%{
+      color: white;
     }
   }
   .about-h1 > span:nth-child(2){
@@ -421,10 +423,10 @@ nav{
     border-radius: 21px;
     border-radius: 25px;
     background: #000000;
-    box-shadow: 10px 10px 10px #000000, -10px -10px 10px #08fa00;
+    box-shadow: 10px 20px 20px #000000, 10px 10px 10px #000000;
 }
 .about .about-content .left img:hover{
-    box-shadow: 10px 10px 10px #e90000, -10px -10px 10px #7300f7;
+    box-shadow: 10px 10px 10px #ac00f0, 10px 10px 10px #00f7ff;
 }
 
 
@@ -537,16 +539,17 @@ nav{
   font-size: 15px;
   transition: 0.4s;
   font-weight: 400;
+  margin-top: 1px;
 }
 
 .accordion-item:hover {
-  background-image: linear-gradient(rgb(190, 187, 187), white);
+  background-image: linear-gradient(rgb(190, 187, 187), white, white);
   color: black;
 }
 
 .accordion-item.active,
 .accordion-item:focus {
-  background-image: linear-gradient(rgb(190, 187, 187), white);
+  background-image: linear-gradient(rgb(190, 187, 187), white, whitesmoke);
   color: rgb(118, 0, 253);
 }
 
@@ -603,15 +606,29 @@ nav{
 
 /* skills section styling */
 .skills h2{
-  font-weight: 400;
+  font-weight: 800;
   letter-spacing: 1px;
   margin-top: 30px;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 16px;
 }
+.skills-content {
+  margin-top: -45px;
+  background-image: linear-gradient(to right,#fffbfb, rgb(107, 105, 105),#464646);
+  padding: 20px;
+  border-radius: 10px;
+  height: 60%;
+}
+.progbar{
+  font-size: 20px;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
 .progress-bar{
-  background: #959595;
-  width: 105%;
+  background: #000000;
+  width: 100%;
   height: 10px;
   border-radius: 5px;
 }
@@ -619,7 +636,6 @@ nav{
   height: 10px;
   border-radius: 5px;
   width: 0%;
-  
 }
 .progress-bar div span{
   height: 40px;
@@ -729,16 +745,15 @@ nav{
   margin-bottom: 80px;
   text-align: center;
   animation: slideIn 3s forwards;
+  margin-top: -20px;
 }
-
-
   .skills{
     background: black;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    height: 1200px;
+    height: 1270px;
     width: 100%;
   }
   @media (max-width: 991px) {
@@ -747,8 +762,10 @@ nav{
       flex-direction: column;
     }
     .progress-bar{
-      background: #959595;
       width: 100%;
+    }
+    .skills-content{
+      margin-top: -80px;
     }
   }
  
@@ -914,7 +931,8 @@ nav{
         margin-left: 20px;
       }
   }
-
+  
+  
 /* projects styling */
 
 
@@ -1432,9 +1450,6 @@ footer {
     .home .home-content .text-2{
         font-size: 60px;
     }
-    .home .home-content .text-3{
-        font-size: 32px;
-    }
     .home .home-content a{
         font-size: 15px;
     }
@@ -1448,9 +1463,9 @@ footer {
     .home .home-content .text-2{
         font-size: 22px;
     }
-    .home .home-content .text-3{
-        font-size: 20px;
-    }
+    .home .home-content .text-2 span{
+      font-size: 25px;
+  }
     .about .about-content .right .text{
         font-size: 18px;
     }

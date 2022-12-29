@@ -35,6 +35,8 @@ skillItems.forEach(item => {
     this.classList.remove('active');
   });
 });
+//
+
 
 
 
