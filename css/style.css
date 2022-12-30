@@ -417,7 +417,7 @@ nav{
 }
 .about .about-content .left img{
     height: 100%;
-    width: 92%;
+    width: 85%;
     object-fit: cover;
     border-radius: 10px;
     border-radius: 21px;
@@ -1558,8 +1558,8 @@ footer {
 }
 @media (max-width:356px){
   .about .about-content .left img{
-    height: 200px;
-    width: 200px;
+    height: 280px;
+    width: 280px;
   }
   .contact .title{
     font-size: 25px;
