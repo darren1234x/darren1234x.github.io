@@ -417,7 +417,7 @@ nav{
 }
 .about .about-content .left img{
     height: 100%;
-    width: 80%;
+    width: 450px;
     object-fit: cover;
     border-radius: 10px;
     border-radius: 21px;
@@ -428,8 +428,11 @@ nav{
 .about .about-content .left img:hover{
     box-shadow: 5px 5px 5px #ac00f0, 5px 5px 5px #00f7ff;
 }
-
-
+@media (max-width: 575px){
+.about .about-content .left img{
+    min-height: 200px;
+}
+}
 .about .about-content .right{
     width: 55%;
 }
