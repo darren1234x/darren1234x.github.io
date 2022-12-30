@@ -327,10 +327,10 @@ nav{
     margin-left: -3px;
 }
 .home .home-content .text-2 span{
-    background: linear-gradient(#6a00db,rgb(255, 254, 255),rgb(99, 0, 192));
+    background: linear-gradient(rgb(141, 0, 223),rgb(208, 18, 255),rgb(142, 0, 224));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 50px ;
+    font-size: 45px ;
     font-weight: 900;
 }
 .home .home-content a{
@@ -417,7 +417,7 @@ nav{
 }
 .about .about-content .left img{
     height: 100%;
-    width: 85%;
+    width: 80%;
     object-fit: cover;
     border-radius: 10px;
     border-radius: 21px;
@@ -673,14 +673,14 @@ nav{
   font-weight: 800;
   letter-spacing: 1px;
   margin-top: 30px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 16px;
 }
 .skills-content {
   margin-top: -45px;
-  background-image: linear-gradient(to right,#fffbfb, rgb(107, 105, 105),#464646);
+  background-image: linear-gradient(to right,rgb(142, 0, 224),#7800c9,#7700ff);
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 50px;
   height: 60%;
 }
 .progbar{
@@ -715,52 +715,85 @@ nav{
   justify-content: center;
 }
 .progress-bar .html{
-  background-image:linear-gradient(#e34c26, rgb(255, 166, 0),rgb(255, 153, 0));
+  background-image:linear-gradient(#e5e5e5e5, white,#e5e5e5e5);
   animation: html 5s linear forwards;
-  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-iteration-count: 4;
+}
+.progress-bar .html:hover{
+  animation-play-state: paused;
+  cursor: pointer;
+}
+.progress-bar .html:active {
+  animation-iteration-count: 1;
 }
 .progress-bar .css{
-  background-image: linear-gradient(#264de4,rgb(155, 155, 240), #0033ac);
+  background-image:linear-gradient(#e5e5e5e5, white,#e5e5e5e5);
   animation: css 5s linear forwards;
-  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-iteration-count: 4;
+}
+.progress-bar .css:hover{
+  animation-play-state: paused;
+  cursor: pointer;
 }
 .progress-bar .js{
-  background-image: linear-gradient(#fbff00,#e7f071, #eeff00);
+  background-image:linear-gradient(#e5e5e5e5, white,#e5e5e5e5);
   animation: js 5s linear forwards;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 4;
+  animation-play-state: running;
+}
+.progress-bar .js:hover{
+  animation-play-state: paused;
+  cursor: pointer;
 }
 .progress-bar .computer{
-  background-image: linear-gradient(#32d600,#00fa92, #32d400);
+  background-image:linear-gradient(#e5e5e5e5, white,#e5e5e5e5);
   animation: computer 5s linear forwards;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 4;
+  animation-play-state: running;
+}
+.progress-bar .computer:hover{
+  animation-play-state: paused;
+  cursor: pointer;
 }
 .progress-bar .edit{
-  background-image: linear-gradient(#7f00e7,#b025c9, #55009b);
+  background-image:linear-gradient(#e5e5e5e5, white,#e5e5e5e5);
   animation: edit 5s linear forwards;
-  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-iteration-count: 4;
+}
+.progress-bar .edit:hover{
+  animation-play-state: paused;
+  cursor: pointer;
 }
 .progress-bar .chess{
-  background-image: linear-gradient(rgb(182, 0, 0),#ff3300,rgb(184, 0, 0));
+  background-image:linear-gradient(#e5e5e5e5, white,#e5e5e5e5);
   animation: chess 5s linear forwards;
-  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-iteration-count: 4;
+}
+.progress-bar .chess:hover{
+  animation-play-state: paused;
+  cursor: pointer;
 }
 .progress-bar .html span{
-  border: 1px solid #e34c26;
+  border: 1px solid white;
 }
 .progress-bar .css span{
-  border: 1px solid #264de4;
+  border: 1px solid white;
 }
 .progress-bar .js span{
-  border: 1px solid #fbff00;
+  border: 1px solid white;
 }
 .progress-bar .computer span{
-  border: 1px solid #15fd00;
+  border: 1px solid white;
 }
 .progress-bar .edit span{
-  border: 1px solid #9c27b0;
+  border: 1px solid white;
 }
 .progress-bar .chess span{
-  border: 1px solid red;
+  border: 1px solid white;
 }
 @keyframes html{
   100%{
@@ -850,7 +883,6 @@ nav{
     margin-top: 10px;
     font-size: 100px;
   }
-  
   .skill-item {
     width: 150px;
     height: 150px;
