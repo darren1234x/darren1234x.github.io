@@ -417,7 +417,7 @@ nav{
 }
 .about .about-content .left img{
     height: 100%;
-    width: 80%;
+    width: 92%;
     object-fit: cover;
     border-radius: 10px;
     border-radius: 21px;
@@ -439,7 +439,7 @@ nav{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-  color: red;
+  color: rgb(142, 0, 224);
 }
 .about .about-content .right p{
     text-align: justify;
@@ -512,16 +512,15 @@ nav{
 }
 
 .Nidom img {
-  margin-top: -10px;
-  width: 100px;
-  height: 100px;
+  margin-top: 20px;
+  width: 110px;
+  height: 110px;
   animation: moveSideToSide 3s infinite alternate;
 }
 
 .Nidom img:hover {
-  animation: hoverScale 0.2s forwards;
+  animation: hoverScale 0.3s forwards;
 }
-
 .accordion {
   overflow: hidden;
   margin-top: 20px;
@@ -529,66 +528,117 @@ nav{
 
 .accordion-item {
   background-image: linear-gradient(rgb(90, 86, 86),black,rgb(0, 0, 0));
-  color: white;
+  color: rgb(255, 255, 255);
   cursor: pointer;
-  padding: 18px;
+  padding: 2px;
   width: 100%;
   border: none;
-  text-align: left;
   outline: none;
   font-size: 15px;
   transition: 0.4s;
-  font-weight: 400;
   margin-top: 1px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
 }
 
 .accordion-item:hover {
-  background-image: linear-gradient(rgb(190, 187, 187), white, white);
-  color: black;
+  background-image: linear-gradient(#e5e5e5, white, #e5e5e5);
+  color: rgb(150, 22, 255);
 }
 
 .accordion-item.active,
 .accordion-item:focus {
-  background-image: linear-gradient(rgb(190, 187, 187), white, whitesmoke);
-  color: rgb(118, 0, 253);
+  background-image: linear-gradient(#e5e5e5, white, #e5e5e5);
+  color: rgb(0, 0, 0);
 }
-
-.panel {
+.panel1{
+  background-image: url(w.gif);
+  background-size: cover;
   padding: 0 18px;
-  background-color: white;
   max-height: 0;
+  width: 100%;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.4s ease-out;
 }
-.arrow-icon {
-  position: relative;
+.panel2{
+  background:black;
+  padding: 0 18px;
+  max-height: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
 }
-.arrow-icon::before {
-  content: "\f107";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
+.panel3{
+  background-image: url(ss.gif);
+  background-size: cover;
+  padding: 0 18px;
+  max-height: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+.panel4{
+  background-image: url(ss.gif);
+  background-size: cover;
+  padding: 0 18px;
+  max-height: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+.spotify{
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  margin-top: 20px;
+}
+.arrow-icon:before {
+  content: '\25B6';
+  font-size: 20px;
+  color: rgb(153, 0, 255);
+  float: right;
+  margin-left: 5px;
+  transition: 0.4s;
+  transform: rotate(90deg);
+}
+.arrow-icon.active:before {
+  transition: 0.4s ;
+  transform: rotate(180deg);
+  content: '\25BC';
+}
+.atext{
+  color: white;
+  display: flex;
+  justify-content: center;
 }
 .darren-video{
   border-radius: 10px;
   width: 100%;
-  height: 250px;
+  height: 260px;
 }
 .flash-text {
+  height: 100px;
+  margin-top: 50px;
   font-size: 18px;
-  color: #333;
+  color: rgb(255, 255, 255);
   text-align: center;
   animation: flash 1s ease-in-out infinite;
 }
-
 .flash-text:hover {
   animation: none;
-  color: rgb(174, 0, 255);
+  color: rgb(127, 0, 247);
   cursor: pointer;
 }
+@media (max-width:991px){
+  .flash-text{
+    height: 120px;
+    width: 100%;
+    font-size: 15px;
+    margin-top: 25px;
+  }
+}
+
 
 @keyframes flash {
   0% {
