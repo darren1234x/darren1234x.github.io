@@ -1555,10 +1555,10 @@ footer {
         margin-bottom: 5px;
     }
     .home .home-content .text-2{
-        font-size: 22px;
+        font-size: 20px;
     }
     .home .home-content .text-2 span{
-      font-size: 25px;
+      font-size: 22px;
   }
     .about .about-content .right .text{
         font-size: 18px;
@@ -1589,10 +1589,6 @@ footer {
     }
 }
 @media (max-width:356px){
-  .about .about-content .left img{
-    height: 100%;
-    width: 100%;
-  }
   .contact .title{
     font-size: 25px;
   }
