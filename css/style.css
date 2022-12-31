@@ -951,11 +951,11 @@ nav{
   }
   
   .swiper-navBtn{
-    color: #6E93f7;
+    color:#3b0088;
     transition: color 0.3s ease;
   }
   .swiper-navBtn:hover{
-    color: #4070F4;
+    color: #3b0088;
   }
   .swiper-navBtn::before,
   .swiper-navBtn::after{
@@ -968,11 +968,11 @@ nav{
     left: 0;
   }
   .swiper-pagination-bullet{
-    background-color: #6E93f7;
+    background-color: #3b0088;
     opacity: 1;
   }
   .swiper-pagination-bullet-active{
-    background-color: #4070F4;
+    background-color: #3b0088;
   }
   
   @media screen and (max-width: 768px) {
