@@ -10,12 +10,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <script src="https://kit.fontawesome.com/2f5a257b82.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 </head>
 <body>
     <nav>
         <div class="wrapper">
           <div class="logo">
-          <img src="./html/darren.gif" alt="logo" class=logo></div>
+            <a href="#"><img src="./html/darren.gif" alt="logo" class=logo></a></div>
           <input type="radio" name="slider" id="menu-btn">
           <input type="radio" name="slider" id="close-btn">
     
@@ -30,7 +31,7 @@
               <label for="showDrop" class="mobile-item"><i class="fa-solid fa-book"></i> Skills <i class="fa-solid fa-square-caret-down"></i></label>
               <ul class="drop-menu">
                 <li><a href="#skills">Progress Bar</a></li>
-                <li><a href="#bar">My Skills</a></li>
+                <li><a href="#bar">Skills Carousel</a></li>
               </ul>
             </li>
             <li>
@@ -132,8 +133,8 @@
     
     <!-- Skills section-->
     <section class="skills" id="skills">
+      <h1>MY SKILLS</h1>
         <div class="max-width">
-            <h1>MY SKILLS</h1>
             <div class="skills-content">
               <p class="progbar">Progress Bar</p>
             <h2>HTML</h2>
@@ -161,36 +162,111 @@
                 <div class="chess"><span>70%</span></div>
             </div>
           </div>
-                <div class="skills-section">
-                  <div class="skills-list">
-                    <div class="skill-item html"><i class="fa-brands fa-html5"></i>
-                        <div class="text" id="html">HTML</div>
-                      <div class="skill-description">I have a little knowledge about HTML, that's why I considered it as my skill right now.</div>
-                    </div>
-                    <div class="skill-item css"><i class="fa-brands fa-css3-alt"></i>
-                        <div class="text" id="css">CSS</div>
-                      <div class="skill-description">Css is used to design our website, I only know a few styles..</div>
-                    </div>
-                    <div class="skill-item js"><i class="fa-brands fa-js"></i>
-                        <div class="text" id="js">JavaScript</div>
-                      <div class="skill-description">Js was one of the most used programming language and I want to learn this skill.</div>
-                    </div>
-                    <div class="skill-item pc"><i class="fa-sharp fa-solid fa-computer"></i>
-                        <div class="text" id="pc">Computer</div>
-                      <div class="skill-description">Using Computer was one of my skills. </div>
-                    </div>
-                    <div class="skill-item edit"><i class="fa-solid fa-camera-retro"></i>
-                        <div class="text" id="edit">Editing</div>
-                      <div class="skill-description">Editing was one of my hobbies. I can edit using apps. </div>
-                    </div>
-                    <div class="skill-item chess"><i class="fa-solid fa-chess"></i>
-                        <div class="text" id="chess">Chess</div>
-                      <div class="skill-description">I consider chess as my skill but I still have a lot more to learn. </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
+          <div class="divbody">
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+    
+                                <div class="card-image">
+                                    <img src="/css/html.png" alt="" class="card-img">
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="name">HTML</h2>
+                                <p class="description">"As a beginner who recently started learning HTML, it allows me to structure and format the content of a webpage. I have learned the basics and I'm excited to continue expanding my skill set in web development."</p>
+    
+                                <button class="button">Slide To View More</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+    
+                                <div class="card-image">
+                                    <img src="/css/css.png" alt="" class="card-img">
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="name">CSS</h2>
+                                <p class="description">"Css allows me to control & design my web pages and it is very interesting. As a beginner, I have learned a few basics of CSS and I am excited to continue learning more to enhance my skills in web design and development."</p>
+    
+                                <button class="button">Slide To View More</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+    
+                                <div class="card-image">
+                                    <img src="/css/js.png" alt="" class="card-img">
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="name">JAVASCRIPT</h2>
+                                <p class="description">"As a beginner in web development, I am excited to learn about JavaScript. I currently only know how to copy and paste pre-written code but I am eager to learn more about this powerful language so I could make my website good."</p>
+    
+                                <button class="button">Slide To View More</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+    
+                                <div class="card-image">
+                                    <img src="/css/pc.png" alt="" class="card-img">
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="name">COMPUTER</h2>
+                                <p class="description">"I have been using computer since I was a kid and I think I already know a lot of things that could be useful at school or even at work, that's why I considered it as my skill. I am also eager to learn more about things that I don't know yet."</p>
+    
+                                <button class="button">Slide To View More</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+    
+                                <div class="card-image">
+                                    <img src="/css/edit.png" alt="" class="card-img">
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="name">EDITING</h2>
+                                <p class="description">Editing was one of my hobbies before that's why I considered it as a skill. I can edit videos, pictures, slideshows etc. using apps in android. However, I'm not an expert and I only knew a few things that isn't even special or amazing to watch."</p>
+    
+                                <button class="button">Slide To View More</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+    
+                                <div class="card-image">
+                                    <img src="/css/chess.png" alt="" class="card-img">
+                                </div>
+                            </div>
+    
+                            <div class="card-content">
+                                <h2 class="name">CHESS</h2>
+                                <p class="description">I used to play chess at my father's laptop, I started playing it when I was 9-10yrs old. But I'm not that good because I don't play everyday and I stopped playing for 6years. I just know how to play and I think I am good enough to considered it as my skill."</p>
+    
+                                <button class="button">Slide To View More</button>
+                            </div>
+                        </div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
     </section>
     <!-- Project section -->
     <section class="projects" id="project">
@@ -262,9 +338,10 @@
     <footer>
       <div class="footer-container">
         <div class="footer-logo">
-          <a href="#"><img src="./html/darren.gif" alt="Company logo"></a>
+          <a href="#"><img src="./html/darren.gif"  alt="Company logo"></a>
         </div>
-        <span class="icons">Visit for more information:</span>
+        <span class="icons"><span class="far fa-copyright"></span> 2020 All rights reserved.    </span></span>
+        <span>Visit for more information:</span>
         <div class="footer-social">
             <div class="wrapper">
               <div class="icon facebook">
@@ -320,7 +397,7 @@
         </div>
       </div>
     </footer>
-      
-    <script src="./js/naunsa.js"></script>
-</body>
+  </body>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="./js/js.js"></script>
 </html>
